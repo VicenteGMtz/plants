@@ -1,0 +1,38 @@
+.search {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  grid-column: 2/12;
+  grid-row: 2/3;
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(0, 255, 191, 0.5),
+      rgba(9, 103, 75, 0.809)
+    ),
+    url("../img/forest.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.search__content {
+  display: grid;
+  row-gap: 1.5rem;
+  margin: auto 12vw;
+  padding: 1rem;
+  color: white;
+}
+
+.search__input-custom {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .search__content {
+    margin: auto 5vw;
+  }
+}

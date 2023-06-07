@@ -1,0 +1,42 @@
+:root {
+  /* FONTS */
+  --font-primary: "Roboto", sans-serif;
+  --font-display: "Roboto", sans-serif;
+
+  /* COLORS */
+  --bg-color: #e5e5e5;
+  --primary-color: #6b8d89;
+  --secondary-color: #5a6162;
+  --secondary-ligth-color: #899395;
+
+  --border-bootom: 2px solid rgba(107, 141, 137, 0.17);
+
+  /* RESPONSIVE BREAK-POIINTS */
+  --bp-largest: 75em; /* 16px * 75 => 1200px */
+  --bp-large: 62.5em; /* 16px * 62.5 => 1000px */
+  --bp-medium: 50em; /* 16px * 50 => 800px */
+  --bp-small: 37.5em; /* 16px * 37.5 => 600px */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem=10px*/
+  background-color: #ebf3f2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:
+    8rem minmax(calc(40vh), calc(10vh)) max-content
+    max-content;
+  row-gap: 3.2rem;
+}
